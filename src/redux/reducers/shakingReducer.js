@@ -5,6 +5,7 @@ import Immutable from "immutable";
 //     shaking: false,
 // };  
 
+// I need 3 type state, treeClass is for shake tree, dropApples is using for drop apples to basket after shaking, apples
 const initialState = {
   treeClass: "",
   dropApples: "",
@@ -21,6 +22,7 @@ const initialState = {
   ]
 };
 
+//I simply used Immutable to detect changes with merge()
 export default function shakingReducer(state = initialState, action) {
   switch (action.type) {
     case ActionTypes.SHAKE_TREE: {
@@ -38,7 +40,7 @@ export default function shakingReducer(state = initialState, action) {
   }
 }
 
-
+// using to start animations, set state
 export const actions = {
   startAnimation(treeClass, dropApples, apples) {
     return { type: ActionTypes.SHAKE_TREE, treeClass, dropApples, apples};

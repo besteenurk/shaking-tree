@@ -45,18 +45,6 @@ class HomeComponent extends Component {
     )
   }
 }
-/* <div className="container">
-        <div className='container__item'>
-          <Tree className={apples.treeClass} apples={apples.apples} />
-          <div className='container__item__dropping'>
-            {this.state.test === true ? apples.dropApples ? <div>
-              <Apple className={apples.dropApples}></Apple>
-            </div> : "" : ""}
-            <Basket />
-          </div>
-          <Button onClick={apples => actions.startAnimation("tree-shake", "basket_to", apples)} />
-        </div>
-      </div> */
 
 HomeComponent.propTypes = {
   apples: PropTypes.object.isRequired,

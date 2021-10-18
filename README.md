@@ -1,7 +1,7 @@
-# SHAKİNG TREE
+# SHAKING TREE
 
 ![SHAKİNG](./src/assets/shaking-tree.png)
 
-# AFTER SHAKİNG TREE
+# AFTER SHAKING TREE
 
 ![AFTER-SHAKİNG](./src/assets/shaking.png)

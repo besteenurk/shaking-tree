@@ -1,0 +1,49 @@
+@import './apple';
+@import './basket';
+@import './tree';
+@import './button';
+@import './apple_basket';
+
+// reset scss
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+.main {
+	margin-top: 2rem;
+}
+.container {
+	width: calc(90%);
+	height: calc(900px);
+	margin: 0 10rem;
+	display: flex;
+	// justify-content: center;
+	align-items: center;
+
+	// flex-direction: column;
+	&__item {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: calc(90%);
+		height: calc(800px);
+
+		&__dropping {
+			display: flex;
+			justify-content: space-evenly;
+			align-items: flex-end;
+			width: calc(10%);
+			height: calc(500px);
+			margin-bottom: -22rem;
+			margin-left: -32rem;
+		}
+	}
+}
+
+.container_basket {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}

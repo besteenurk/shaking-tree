@@ -1,0 +1,100 @@
+#apple {
+  width: 1.4em;
+  position: absolute;
+}
+
+.apple {
+  &__apple__1 {
+    top: calc(12%);
+    left: 50%;
+  }
+
+  &__apple__2 {
+    top: calc(15%);
+    left: 41%;
+  }
+
+  &__apple__3 {
+    top: calc(13%);
+    left: 44%;
+  }
+
+  &__apple__4 {
+    top: calc(16%);
+    left: 52%;
+  }
+
+  &__apple__5 {
+    top: calc(18%);
+    left: 48%;
+  }
+
+  &__apple__6 {
+    top: calc(16%);
+    left: 53%;
+  }
+
+  &__apple__7 {
+    top: calc(26%);
+    left: 57%;
+  }
+
+  &__apple__8 {
+    top: calc(22%);
+    left: 43%;
+  }
+
+  &__apple__9 {
+    top: calc(20%);
+    left: 59%;
+  }
+}
+
+.drop_apple__1,
+.drop_apple__2,
+.drop_apple__3,
+.drop_apple__4,
+.drop_apple__5 {
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+.drop_apple__1 {
+  animation: fall linear 3.5s forwards;
+  animation-delay: 3s;
+}
+
+.drop_apple__2 {
+  animation: fall linear 3.3s forwards;
+  animation-delay: 3s
+}
+
+.drop_apple__3 {
+  animation: fall linear 3.1s forwards;
+  animation-delay: 3.3s
+}
+
+.drop_apple__4 {
+  animation: fall linear 3.2s forwards;
+  animation-delay: 3.4s
+}
+
+.drop_apple__5 {
+  animation: fall linear 3.4s forwards;
+  animation-delay: 3.5s
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(60vh);
+  }
+
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}

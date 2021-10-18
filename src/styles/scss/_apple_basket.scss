@@ -1,0 +1,70 @@
+$small: 480px;
+$medium: 768px;
+$high: 1200px;
+$very-high: 1400px;
+
+
+.apple__basket_to{
+	position: relative;
+	//z-index: 999;
+	width: 3em;
+	position: absolute;
+	top: calc(67%);
+	left: 48%;
+}
+
+.apple__apple_basket_to {
+	position: relative;
+	//z-index: 999;
+	width: 3em;
+	position: absolute;
+	top: calc(67%);
+	left: 47%;
+}
+
+.apple__basket_to::before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+}
+
+.apple__apple_basket_to::before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+}
+
+@keyframes basket_apple {
+	from {
+		top: 90%;
+		left: 42%;
+	}
+
+	to {
+		top: 82%;
+		left: 50%;
+	}
+}
+
+
+@media (max-width: $small) {
+    .apple__basket_to {
+        top: 42%;
+    }
+	.apple__apple_basket_to {
+		top: 42%;
+	}
+}
+
+@media (max-width: $medium) {
+    .apple__basket_to {
+        top: 78%;
+		left: 46%;
+    }
+	.apple__apple_basket_to {
+		top: 78%;
+		left: 44%;
+	}
+}

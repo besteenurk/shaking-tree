@@ -1,0 +1,37 @@
+$small: 480px;
+$medium: 768px;
+$high: 1200px;
+$very-high: 1400px;
+
+
+.basket {
+  width: 6em;
+  display: block;
+  margin: 0 auto;
+  margin-top: 2em;
+  position: relative;
+  &--apple1 {
+    width: 3.5em;
+    top: 75%;
+    left: 49%;
+    position: absolute;
+    z-index: 100;
+    animation: apple infinite 2s ease-in;
+  }
+  &--apple2 {
+    width: 3.5em;
+    top: 75%;
+    left: 52%;
+    position: absolute;
+    z-index: 100;
+    animation: apple infinite 2s ease-in-out;
+  }
+  &--apple3 {
+    width: 3.5em;
+    top: 75%;
+    left: 46%;
+    position: absolute;
+    z-index: 100;
+    animation: apple infinite 2s ease-out;
+  }
+}
